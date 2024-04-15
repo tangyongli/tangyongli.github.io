@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Marker Clustering Example</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster-src.js"></script>
+</head>
+<body>
+
+<div id="map" style="width: 800px; height: 600px;"></div>
+
+<script>
+	var map = L.map('map').setView([51.505, -0.09], 13); // 初始化 Leaflet 地图实例
+
+    var osm=L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap contributors'
+        })//.addTo(map);
+        osm.addTo(map);
+
+	var markers = L.markerClusterGroup({
+        // 禁用聚类缩放
+        //disableClusteringAtZoom: 10,
+        //maxClusterRadius: 100, // 定义在哪个缩放级别下停止聚类
+
+
+
+    }); // 创建一个 MarkerClusterGroup 实例
+
+	// 添加示例点到 MarkerClusterGroup
+    /*
+    
+	for (var i = 0; i < 1000; i++) {
+		var latlng = L.latLng(
+			51.5 + Math.random(),
+			-0.09 + Math.random()
+		);
+		var marker = L.marker(latlng);
+		markers.addLayer(marker);
+	}
+
+	//map.addLayer(markers); // 添加 MarkerClusterGroup 到地图上
+*/
+    // 生成按照经度每隔 10° 生成一个点的随机点集
+    
+    for (var lng = 0; lng <= 180; lng += 1) {
+        // 在每个经度上生成一个随机的纬度
+        var lat = Math.random() * 180 - 90;
+        var latlng = L.latLng(lat, lng);
+        console.log('latlng: ' + latlng)
+        var marker = L.marker(latlng);
+        markers.addLayer(marker);
+    }
+    map.addLayer(markers); // 添加 MarkerClusterGroup 到地图上
+    
+	// 监听地图的缩放事件
+	map.on('zoomend', function() {
+		var currentZoom = map.getZoom();
+
+		// 根据当前缩放级别切换 MarkerClusterGroup 的聚类显示状态
+		if (currentZoom < 1) {
+			map.removeLayer(markers);
+		} else {
+			map.addLayer(markers);
+		}
+	});
+</script>
+
+</body>
+</html>
