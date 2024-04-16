@@ -2,7 +2,7 @@
 layout: page
 title: "Notes Index"
 ---
-
-- [Math Notes](lectures/)
-- [Chinese Notes](webmapping/)
+weee
+- [Math Notes](notes/lectures/index.md)
+- [Chinese Notes](notes/webmapping/index.md)
 
