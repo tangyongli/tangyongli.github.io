@@ -1,2 +1,4 @@
 today is one good day
-![alt text](board.png)
+![alt text](./letures/board.png)
+
+![cropland](cropland1.jpg)
