@@ -3,5 +3,5 @@ layout: page
 title: "Notes Index"
 ---
 
-[First Chapter](3dtiles.md)
 
+- [webmapping](notes/webmapping/3dtiles.md)
