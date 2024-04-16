@@ -3,6 +3,6 @@ layout: page
 title: "Notes Index"
 ---
 
-- [lectures](notes/lectures/index.md)
-- [webmapping](notes/webmapping/index.md)
+- [lectures](lectures/index.md)
+- [webmapping](webmapping/index.md)
 

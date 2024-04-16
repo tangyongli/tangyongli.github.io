@@ -4,4 +4,4 @@ title: "Notes Index"
 ---
 
 
-- [3dtiles](notes/webmapping/ceisum/3dtiles.md)
+- [3dtiles](3dtiles.md)

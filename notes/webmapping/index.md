@@ -1,2 +1,2 @@
 
-- [webmapping](notes/webmapping/ceisum/index.md)
+- [webmapping](ceisum/index.md)
