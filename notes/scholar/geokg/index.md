@@ -10,6 +10,7 @@ https://ar5iv.labs.arxiv.org/html/2109.10036
 宾语（Object）：可以是另一个实体或资源，或者是一些数据值（如字符串、数字等）
 ### application
 DBpedia和Wikidata
+https://www.dbpedia.org/
 
 ## SPARQL
 一组W3C推荐标准，提供了对Web上或RDF存储（RDF Store）中的RDF图内容进行查询和处理的语言和协议。
