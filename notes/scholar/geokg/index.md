@@ -13,6 +13,7 @@ https://ar5iv.labs.arxiv.org/html/2109.10036
 
 ### application
 [DBpedia](https://www.dbpedia.org/)和Wikidata
+[wenwenli_kgl](https://www.knowwheregraph.org/graph/)
 
 
 ## SPARQL
