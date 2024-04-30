@@ -1,3 +1,3 @@
 
 - [geopandas](geopandas.md)
-- [matplotlib](matplotlib.md)
+- [matplotlib](matplotlib.ipynb)
