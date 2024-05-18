@@ -1,4 +1,6 @@
-[book](https://book.mixu.net/node/index.html)
+>learning resource
+>[book](https://book.mixu.net/node/index.html)
+>[official](https://nodejs.org/en/learn/asynchronous-work/javascript-asynchronous-programming-and-callbacks)
 
 ## 同步-block methods
 
@@ -58,6 +60,8 @@ fs.readFile('/file.json', (err, data) => {
 });
 
 ```
+
+
 
 
 

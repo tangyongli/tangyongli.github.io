@@ -23,7 +23,16 @@ Neither one of us is interested in gardening
 > negation instead of too, also
 >>I don't eat meat and my husband doesn't either.
 >>I'm not allowed another piece of cake, so you're not either!
+## Not but rather(than)
+but rather+==n==
+but  rather+=='动词原型'==
+>Don't think about what you're doing but rather why you're doing it？
+>It's the time rather distance to distance us.
+>Some people love cooking but not washing the dishes, right? 
+>A difficulty with the h-d relationship is that it is not constant but ==rather varies== from stand to stand[因立场而变]and develops over time 
 
->> 
-
-
+## no longer
+>When you create a space for yourself to feel whatever it is that is there to feel, you allow that feeling to be released. And once it is released, it is ==no longer== there acting as a barrier to action.
+>Sadly, Andrew and Bradley are no longer friends. They had an argument.
+>l no longer love this color
+>Mr Jones will no longer be the president.
