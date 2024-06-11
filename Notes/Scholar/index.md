@@ -1,2 +1,3 @@
 
-- [Scholar](ceisum/index.md)
+- [Scholar](geokg/basic.md)
+- [Scholar](geoencoding/index.md)
