@@ -5,46 +5,23 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Blogs/">Blog</a></li>
-                <li><a href="Works/">Works</a></li>
-                <li><a href="Notes/">Notes</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>欢迎来到我的个人网站</h1>
-        <p>My personal website</p>
-        
-        <!-- 自动生成目录链接 -->
-        <ul id="directoryList"></ul>
-    </main>
+        <script>
+          (async () => {
+            //https://api.github.com/repos/myrepo/repo1/contents/
+            const response = await fetch('https://api.github.com/repos/tangyongli/tangyongli.github.io/contents/');
+            const data = await response.json();
+            let htmlString = '<ul>';
+            
+            for (let file of data) {
+              htmlString += `<li><a href="${file.path}">${file.name}</a></li>`;
+            }
+    
+            htmlString += '</ul>';
+            document.getElementsByTagName('body')[0].innerHTML = htmlString;
+          })()
+        </script>
 
-    <script>
-        // 目录结构
-        var directories = [
-            "Blogs",
-            "Works",
-            "Notes"
-            // 添加更多目录如有需要
-        ];
 
-        // 生成目录链接
-        var directoryList = document.getElementById("directoryList");
-        directories.forEach(function(directory) {
-            var listItem = document.createElement("li");
-            var link = document.createElement("a");
-            link.href = directory + "/";
-            link.textContent = directory;
-            listItem.appendChild(link);
-            console.log('listItem',listItem);
-            directoryList.appendChild(listItem);
-            console.log("directoryList",directoryList);
-        });
-    </script>
 </body>
-</html>
 
+</html>
