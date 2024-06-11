@@ -18,6 +18,31 @@
     <main>
         <h1>欢迎来到我的个人网站</h1>
         <p>My personal website</p>
+        
+        <!-- 自动生成目录链接 -->
+        <ul id="directoryList"></ul>
     </main>
+
+    <script>
+        // 目录结构
+        var directories = [
+            "Blogs",
+            "Works",
+            "Notes"
+            // 添加更多目录如有需要
+        ];
+
+        // 生成目录链接
+        var directoryList = document.getElementById("directoryList");
+        directories.forEach(function(directory) {
+            var listItem = document.createElement("li");
+            var link = document.createElement("a");
+            link.href = directory + "/";
+            link.textContent = directory;
+            listItem.appendChild(link);
+            directoryList.appendChild(listItem);
+        });
+    </script>
 </body>
 </html>
+

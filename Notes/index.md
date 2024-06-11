@@ -3,8 +3,8 @@ layout: page
 title: "Notes Index"
 ---
 
-- [lectures](lectures/index.md)
+- [Code](Code/index.md)
 - [webmapping](webmapping/index.md)
 - [Database](Database/index.md)
-- [Code](Code/index.md)
+- [lectures](lectures/index.md)
 - [Scholar](Scholar/index.md)
