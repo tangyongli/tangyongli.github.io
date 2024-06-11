@@ -1,3 +1,3 @@
 
-- [Scholar](geokg/basic.md)
-- [Scholar](geoencoding/.md)
+- [geokg](geokg/basic.md)
+- [geoencoding](geoencoding/.md)
