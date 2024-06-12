@@ -4,7 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <!-- /* styles.css */ -->
+    <style>
+      .container {
+          display: flex;
+          justify-content: space-between;
+      }
+      
+      .sidebar {
+          width: 30%;
+          padding: 20px;
+          background-color: #f4f4f4;
+      }
+      
+      .profile {
+          text-align: center;
+      }
+      
+      .profile-picture {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          margin-bottom: 20px;
+      }
+      
+      .content {
+          width: 65%;
+          padding: 20px;
+      }
+      
+      header {
+          margin-top: 20px; /* 添加一个顶部间距来分隔个人资料和内容部分 */
+      }
+      
+      nav ul {
+          list-style-type: none;
+          padding: 0;
+      }
+      
+      nav ul li {
+          display: inline;
+          margin-right: 20px;
+      }
+      
+      nav ul li a {
+          text-decoration: none;
+          color: #333;
+      }
+      
+      nav ul li a:hover {
+          color: #007bff;
+      }
+  </style>
 </head>
 <body>
     <div class="container">
