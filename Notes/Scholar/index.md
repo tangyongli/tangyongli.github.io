@@ -1,3 +1,3 @@
 
 
-- [geokg](Scholar/geokg/basic.md)
+- [geokg](geokg/basic.md)
