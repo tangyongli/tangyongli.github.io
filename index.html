@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <title>My personal website</title>
@@ -24,4 +24,62 @@
 
 </body>
 
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <style>
+    /* Add some basic styling */
+    .directory {
+      cursor: pointer;
+      color: blue;
+      text-decoration: underline;
+    }
+    .subdirectory {
+      display: none;
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Website</h1>
+  <div id="content">
+    <div id="notes" class="directory">Notes</div>
+    <div id="notes-sub" class="subdirectory">
+      <!-- Subdirectories for Notes -->
+      <div>Note 1</div>
+      <div>Note 2</div>
+    </div>
+    <div id="works" class="directory">Works</div>
+    <div id="works-sub" class="subdirectory">
+      <!-- Subdirectories for Works -->
+      <div>Work 1</div>
+      <div>Work 2</div>
+    </div>
+    <div id="blogs" class="directory">Blogs</div>
+    <div id="blogs-sub" class="subdirectory">
+      <!-- Subdirectories for Blogs -->
+      <div>Blog 1</div>
+      <div>Blog 2</div>
+    </div>
+  </div>
+  <script>
+    // JavaScript to handle clicks and render subdirectories
+    document.querySelectorAll('.directory').forEach(dir => {
+      dir.addEventListener('click', () => {
+        const subDirId = dir.id + '-sub';
+        const subDir = document.getElementById(subDirId);
+        if (subDir.style.display === 'none' || subDir.style.display === '') {
+          subDir.style.display = 'block';
+        } else {
+          subDir.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
 </html>
