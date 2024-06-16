@@ -8,19 +8,6 @@
 Set-ExecutionPolicy RemoteSigned //脚本的许可权限，永久允许
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass //临时
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ![alt text](../image/image-1.png)
 ## require
 require method is built in js, is  CommonJS module system.

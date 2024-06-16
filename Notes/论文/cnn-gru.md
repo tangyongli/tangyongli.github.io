@@ -13,3 +13,5 @@ RS-Large-Scale Rice Mapping Using Multi-Task Spatiotemporal Deep Learning and Se
 ![alt text](image/image7.png)
 2024-science reports-==CNN-BiGR==
 GOA-optimized deep learning for soybean yield estimation using multi-source remote sensing data
+
+![alt text](image-2.png)
