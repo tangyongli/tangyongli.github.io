@@ -20,8 +20,8 @@
         <h1>YL's Personal Website</h1>
         <nav>
             <ul>
-                <li><a href="#notes">Notes</a></li>
-                <li><a href="#works">Works</a></li>
+                <li><a href="#Notes">Notes</a></li>
+                <li><a href="#Works">Works</a></li>
                 <li><a href="#footprints">Footprints</a></li>
             </ul>
         </nav>
@@ -70,27 +70,6 @@
     <footer>
         <p>Contact: <a href="<mailto:yonglitang2000@gmail.com>">yonglitang2000@gmail.com</a></p>
     </footer>
-    <script>
-        document.querySelectorAll('.main-category > h2').forEach(category => {
-            category.addEventListener('click', () => {
-                const subcategories = category.nextElementSibling;
-                if (subcategories.style.display === 'block') {
-                    subcategories.style.display = 'none';
-                } else {
-                    subcategories.style.display = 'block';
-                }
-            });
-        });
-        document.querySelectorAll('.subcategory > h3').forEach(subcategory => {
-            subcategory.addEventListener('click', () => {
-                const subSubcategories = subcategory.nextElementSibling;
-                if (subSubcategories.style.display === 'block') {
-                    subSubcategories.style.display = 'none';
-                } else {
-                    subSubcategories.style.display = 'block';
-                }
-            });
-        });
-    </script>
+    
 </body>
 </html>
