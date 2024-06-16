@@ -1,13 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website</title>
-     <!-- Bootstrap Core CSS -->
+    <!-- Bootstrap Core CSS -->
     <link href="css/styles.css" rel="stylesheet">
     <style>
+        /* CSS styles here */
         .container {
             display: flex;
         }
@@ -15,68 +15,45 @@
             width: 30%;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            align-items: left;
+            /* Removed 'align-items: left;' as it's not valid. Use 'align-items: flex-start;' instead if needed. */
         }
         .profile .vcard-details {
-    list-style-type: none; /* 去除列表样式 */
-    padding: 0; /* 去除内边距 */
-}
-
+            list-style-type: none; /* Remove list styles */
+            padding: 0; /* Remove padding */
+        }
         .profile .vcard-details li {
-            margin-bottom: 10px; /* 设置列表项之间的间距 */
+            margin-bottom: 10px; /* Adjust margin between list items */
         }
-
         .profile .vcard-details li svg {
-            vertical-align: middle; /* 垂直居中图标 */
-            margin-right: 5px; /* 图标右侧留出一定空间 */
+            vertical-align: middle; /* Align icons vertically */
+            margin-right: 5px; /* Space between icon and text */
         }
-
         .profile .vcard-details li span {
-            vertical-align: middle; /* 垂直居中文本 */
+            vertical-align: middle; /* Align text vertically */
         }
-
-        .profile ul {
-            align-items: left;
-
-
+        .content {
+            width: 70%;
+            padding: 20px;
         }
-        /* show the main directory in a horizonal sequence */
-        .content nav  {
-            width: 95%;
-            background-color: #e5f2ff; /* Light blue background for the content area */
+        .content nav {
+            width: 100%;
+            background-color: #e5f2ff;
             padding: 20px;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            justify-content: center;
         }
         .content nav ul {
             list-style-type: none;
             padding: 0;
             display: flex;
-            flex-direction: row;
             justify-content: space-around;
-            width: 100%;
+            width: 50%;
         }
         .content nav ul li {
             flex: 1;
             margin: 0 10px;
-        }
-        
-        
-        /* .content nav ul li a {
-            display: block;
-            text-decoration: none;
-            color: white;
-            padding: 10px 20px;
-            background-color: #007BFF; 
-            border-radius: 5px;
             text-align: center;
-        } 
-        .content nav ul li a:hover {
-            background-color: #0056b3;
-        }  
-            */
-        
+        }
         .profile ul {
             list-style-type: none;
             padding: 0;
@@ -89,65 +66,73 @@
             height: 100px;
             border-radius: 50%;
         }
-   
     </style>
-    </style>
-
 </head>
 <body>
-    <div id="Work">
-        <!-- Work 相关内容 -->
-        <p>today is a good day </p>
-    </div>
-    <div id="Notes">
-        <!-- Notes 相关内容 -->
-    </div>
-    <div id="Footprints">
-        <!-- Footprints 相关内容 -->
-    <div class="container">
-        <div class="sidebar">
-            <div class="profile">
-                <!--flex容器  -->
-                <div class="user-profile-mini-avatar d-flex align-items-center">
-                    <img src="image.png" alt="Profile Picture" class="profile-picture">
-                    <div class="ml-2">
-                        <strong>YongLiTang</strong>
-                    </div>
+
+<div class="container">
+    <div class="sidebar">
+        <div class="profile">
+            <div class="user-profile-mini-avatar d-flex align-items-center">
+                <img src="image.png" alt="Profile Picture" class="profile-picture">
+                <div class="ml-2">
+                    <strong>YongLiTang</strong>
                 </div>
-                
-        
-
-                <ul class="list-unstyled mb-0 ml-0">
-                    <li> <svg class="octicon octicon-organization" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M1.75 16A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 0 0 .25-.25V8.285a.25.25 0 0 0-.111-.208l-1.055-.703a.749.749 0 1 1 .832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0 1 14.25 16h-3.5a.766.766 0 0 1-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 0 1-.75-.75V14h-1v1.25a.75.75 0 0 1-.75.75Zm-.25-1.75c0 .138.112.25.25.25H4v-1.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 .75.75v1.25h2.25a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25ZM3.75 6h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 3.75A.75.75 0 0 1 3.75 3h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 3.75Zm4 3A.75.75 0 0 1 7.75 6h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 7 6.75ZM7.75 3h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 9.75A.75.75 0 0 1 3.75 9h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 9.75ZM7.75 9h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5Z"></path></svg>
-                    <span>Bachelor-Nanjing Agricultural University(2019-2023)</span></li>
-                    <li> <svg class="octicon octicon-organization" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M1.75 16A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 0 0 .25-.25V8.285a.25.25 0 0 0-.111-.208l-1.055-.703a.749.749 0 1 1 .832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0 1 14.25 16h-3.5a.766.766 0 0 1-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 0 1-.75-.75V14h-1v1.25a.75.75 0 0 1-.75.75Zm-.25-1.75c0 .138.112.25.25.25H4v-1.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 .75.75v1.25h2.25a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25ZM3.75 6h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 3.75A.75.75 0 0 1 3.75 3h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 3.75Zm4 3A.75.75 0 0 1 7.75 6h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 7 6.75ZM7.75 3h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 9.75A.75.75 0 0 1 3.75 9h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 9.75ZM7.75 9h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5Z"></path></svg>
-                        <span> Master-Lanzhou University(2023- )</span></li>
-    
-                    <li> Gmail:yonglitang2000@gmail.com</li>
-                </ul>
-            </span>
-               
-             
-                
-                
-              </div>
             </div>
-        <div class="content">
-            <!-- add one distance up to the top of webpage -->
 
-            <!-- <header> -->
-                <nav>
-                    <ul>
-                        <!-- <li><a href="index.html">Home</a></li> -->
-                        <li><a href="Notes/">Notes</a></li>
-                        <li><a href="Works/">Works</a></li>
-                        <li><a href="Footprints/">Footprints</a></li>
-                    </ul>
-                </nav>
-            <!-- </header> -->
+            <ul class="list-unstyled mb-0 ml-0">
+                <li>
+                    <svg class="octicon octicon-organization" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                        <path d="M1.75 16A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 0 0 .25-.25V8.285a.25.25 0 0 0-.111-.208l-1.055-.703a.749.749 0 1 1 .832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0 1 14.25 16h-3.5a.766.766 0 0 1-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 0 1-.75-.75V14h-1v1.25a.75.75 0 0 1-.75.75Zm-.25-1.75c0 .138.112.25.25.25H4v-1.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 .75.75v1.25h2.25a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25ZM3.75 6h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 3.75A.75.75 0 0 1 3.75 3h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 3.75Zzm4 3A.75.75 0 0 1 7.75 6h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 7 6.75ZM7.75 3h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 9.75A.75.75 0 0 1 3.75 9h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 9.75ZM7.75 9h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5Z"></path>
+                    </svg>
+                    <span>Bachelor-Nanjing Agricultural University (2019-2023)</span>
+                </li>
+                <li>
+                    <svg class="octicon octicon-organization" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                        <path d="M1.75 16A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 0 0 .25-.25V8.285a.25.25 0 0 0-.111-.208l-1.055-.703a.749.749 0 1 1 .832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0 1 14.25 16h-3.5a.766.766 0 0 1-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 0 1-.75-.75V14h-1v1.25a.75.75 0 0 1-.75.75Zm-.25-1.75c0 .138.112.25.25.25H4v-1.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 .75.75v1.25h2.25a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25ZM3.75 6h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 3.75A.75.75 0 0 1 3.75 3h.5a.75.75 0 0 1 0 1.5h-.5
+                        <svg class="octicon octicon-organization" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                            <path d="M1.75 16A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 0 0 .25-.25V8.285a.25.25 0 0 0-.111-.208l-1.055-.703a.749.749 0 1 1 .832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0 1 14.25 16h-3.5a.766.766 0 0 1-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 0 1-.75-.75V14h-1v1.25a.75.75 0 0 1-.75.75Zm-.25-1.75c0 .138.112.25.25.25H4v-1.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 .75.75v1.25h2.25a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25ZM3.75 6h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 3.75A.75.75 0 0 1 3.75 3h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 3.75Zzm4 3A.75.75 0 0 1 7.75 6h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 7 6.75ZM7.75 3h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 9.75A.75.75 0 0 1 3.75 9h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 9.75ZM7.75 9h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5Z"></path>
+                        </svg>
+                        <span>Master-Lanzhou University (2023- )</span>
+                    </li>
+                    <li>Gmail: yonglitang2000@gmail.com</li>
+                </ul>
+            </div>
         </div>
-    </div>
-   
-    <script src="Js/script.js"></script>
-</body>
-</html>
+        
+        <div class="content">
+            <nav>
+                <ul>
+                    <li><a href="#notes">Notes</a></li>
+                    <li><a href="#work">Works</a></li>
+                    <li><a href="#footprints">Footprints</a></li>
+                </ul>
+            </nav>
+            <div id="work">
+                <!-- Work 相关内容 -->
+                <h1>Mapping</h1>
+                <p>Today is a good day</h>
+                <h1>City Planning</h1>
+                <p>City planning involves...</p>
+            </div>
+            <div id="notes">
+                <!-- Notes 相关内容 -->
+                <h1>Notes</h1>
+                <p>Here are some notes...</p>
+            </div>
+            <div id="footprints">
+                <!-- Footprints 相关内容 -->
+                <h1>Footprints</h1>
+                <img src="https://www.esri.com/content/dam/esrisites/en-us/about/what-is-gis/assets/image-switcher-maps/identify-problems-what-is-gis-image-switcher.jpg" height="200px" width="300px" alt="Footprints Image">
+
+            </div>
+        
+            
+        </div>
+        
+        </div>
+        
+        <script src="Js/script.js"></script>
+        </body>
+        </html>
+        

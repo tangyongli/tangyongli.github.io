@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scroll to Sections</title>
+<style>
+    /* 可选的样式，用于美化页面或修正布局 */
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        position: fixed;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        background: #f0f0f0;
+        padding: 10px;
+        list-style-type: none;
+    }
+    ul li {
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+    <div id="work">
+        <!-- Work 相关内容 -->
+        <h1>Mapping</h1>
+        <p>today is a good day</p>
+        <h1>City Planning</h1>
+    
+        <img src="https://www.esri.com/content/dam/esrisites/en-us/about/what-is-gis/assets/image-switcher-maps/identify-problems-what-is-gis-image-switcher.jpg">
+    </div>
+    <div id="notes">
+        <!-- Notes 相关内容 -->
+        <h1>Notes Section</h1>
+        <p>Some notes about various topics...</p>
+    </div>
+    <div id="footprints">
+        <!-- Footprints 相关内容 -->
+        <h1>Footprints Section</h1>
+        <p>Some footprints of your activities...</p>
+    </div>
+    <!-- 目录部分 -->
+    <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#notes">Notes</a></li>
+        <li><a href="#footprints">Footprints</a></li>
+    </ul>
+</body>
+</html>
+
