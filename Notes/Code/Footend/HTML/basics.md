@@ -1,10 +1,35 @@
 https://blog.hubspot.com/website/html
 # Tag
-## div tag
-Div是一个容器，它里面可以包括容器或者元素(<nav>, <header>, <footer>, and <form>)
-Div是耦合
+## Div tag
+Div是一个容器，它里面可以包括容器或者元素 (`<nav>`, `<header>`, `<footer>`, and `<form>`).<br>
+Div容器可以设置style，里面所有元素都使用相同的style,outside of div，是另一种style.<br>
+可以通过class属性或者id属性来定位div容器，从而设置style. Div并没有做什么特殊的，它只是将内容分section组织，并且每个section可以利用css单独运用style.
+To style these sections with CSS, you must add a ==class or ID attribute== to the div element
 
-Div 元素有助于将代码组织成清晰标记的部分。他们还在内容之前和之后添加换行符。
+```html
+<!-- css with div class attribute -->
+.myDiv {
+font-family: 'Arial';
+font-weight: bold;
+  border: 5px outset #00A4BD;   
+  color: #2D3E50;
+background-color: #EAF0F6;
+  text-align: center;
+}
+
+<div class="myDiv">
+
+  <h2>This is a heading in a div element</h2>
+
+  <p>This is some text in a div element.</p>
+
+</div>
+
+<p>This is some text outside the div element.</p>
+
+```
+
+
 
 # Attribute
 # 容器

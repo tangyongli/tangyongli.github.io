@@ -15,3 +15,6 @@ our ancestors would have gone days without food
 This is day one of fasting 断食第一天
 work off the energy
 run out of the energy
+
+I'll flip through the pages.
+The second time, I go a little faster.

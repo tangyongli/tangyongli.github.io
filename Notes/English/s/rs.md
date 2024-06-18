@@ -14,6 +14,7 @@ on earth
 on the street
 at unprecedented scale
 at the neighborhood scale
+at the end of 2023
 at night
 earth-observation instrument
 geostationary orbit 地球静止轨道，低
