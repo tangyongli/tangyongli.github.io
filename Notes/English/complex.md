@@ -30,6 +30,13 @@ but  rather+=='动词原型'==
 >It's the time rather distance to distance us.
 >Some people love cooking but not washing the dishes, right? 
 >A difficulty with the h-d relationship is that it is not constant but ==rather varies== from stand to stand[因立场而变]and develops over time 
+## Rather than
+So I began thinking about how I can take this unfortunate situation and rather than suffer because of it.<br>
+I like to think though of making cancer a chronic
+disease rather than focus just on curing cancer.<br>
+This world where life supports you rather than you trying to manage it.<br>
+it's an opportunity rather than a threat<br>
+you're stock piling[囤货].
 
 ## no longer
 >When you create a space for yourself to feel whatever it is that is there to feel, you allow that feeling to be released. And once it is released, it is ==no longer== there acting as a barrier to action.
