@@ -76,6 +76,9 @@
             height: 100px;
             border-radius: 50%;
         }
+        .iframe, .row {
+  margin: 0; 
+}
     </style>
 </head>
 <body>
@@ -217,12 +220,13 @@
                 <li>Fetch data from database. So after users submit a site's information,click the site's marker again, a pop-up window cloud display the associated tour information fetched from the database</li>
 
             <iframe src="https://map.9990116.xyz/tour" 
-                width="800" height="600" 
-                frameborder="0" 
+                width="100%" height="400" 
+                frameborder="0" style="padding-bottom: 10px;"
                 allowfullscreen>
             </iframe>
+            <p>Results</p>
             <div class="row">
-                <img style="width:100%; height:100%;margin-top:0px" src="img/mapinterface.png">
+                <img style="width:100%; height:400;margin-top:-10px" src="img/mapinterface.png">
             </div>
             </div>
 
